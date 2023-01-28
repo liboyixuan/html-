@@ -1,0 +1,13 @@
+/*通过元素选择获得body元素*/
+body{
+    /*背景*/
+    /*设置元素的背景颜色*/
+        background-color: aqua;
+    /*设置元素的背景颜色* 默认重复图片*/
+        background-image:url(../img/4.jpg) ;
+    /*设置图片是否重复no-repeat repeat-x横向重复 repeat-y纵向重复*/
+        background-repeat: repeat;
+    /*设置图片的大小尺寸*/
+        background-size: 100px;
+    
+}

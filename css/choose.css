@@ -1,0 +1,17 @@
+ /*后代*/
+ .food li{
+    background-color: antiquewhite;
+    
+}
+/*子代*/
+.food > li{
+    border: 1px solid orchid;
+}
+/*相邻兄弟*/
+#d +div{
+    color: aquamarine ;
+}
+/*普通兄弟*/
+#t ~li{
+    color: chartreuse;
+}

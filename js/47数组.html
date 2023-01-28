@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组</title>
+</head>
+<body>
+    <script type="text/javascript">
+//隐式定义
+        var arr=[];
+        console.log(arr);
+        var arr2=[1,'a',true];
+        console.log(arr2);
+//直接实例化
+        var arr3=new Array(1,2,3);
+        console.log(arr3);
+//创建数组并指定长度
+        var arr4=new Array(5);
+        console.log(arr4)
+//获取数组的长度
+    console.log(arr2.length);
+//设置数组的长度
+    arr2.length=5;
+    console.log(arr2);
+//数组的元素
+    console.log(arr2[0]);
+    //设置元素
+    arr2[4]='as';
+    console.log(arr2);
+//设置属性
+    arr2['unma']='as';
+    console.log(arr2);
+/*数组的遍历*/
+//普通for
+        for(var i = 0;i<arr2.length;i++){
+            console.log(arr2[i]);
+        }
+//for in
+        for(var index in arr2){
+            console.log(index);
+            console.log(arr2[index]);
+            console.log("********")
+        }
+//forEach
+        arr2.forEach(function(element,index){
+            console.log(element);//element 元素 index 下标
+            console.log(index)
+        })
+    </script>
+</body>
+</html>

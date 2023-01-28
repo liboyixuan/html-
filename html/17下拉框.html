@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下拉框</title>
+</head>
+<body>
+    <!--
+        下拉框
+        select 标签
+        option 选项
+        multiple 多选
+        size 设置下拉框可见选项
+        selected 默认选中项
+        disabled 禁用某个选项
+    -->
+    <select name="city" >
+        <option>上海</option>
+        <option>南京</option>
+        <option>北京</option>
+    </select>
+<hr />
+<select name="city" multiple="multiple" size="2">
+    <option>上海</option>
+    <option>南京</option>
+    <option>北京</option>
+</select>
+<hr />
+<select name="city" >
+    <option value="">请选择城市</option>
+    <option>上海</option>
+    <option selected="selected">南京</option>
+    <option disabled="disabled">北京</option>
+</select>
+</body>
+</html>

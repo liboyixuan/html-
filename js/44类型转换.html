@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类型转换</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //函数转换 parseInt()***
+        console.log(parseInt("11asd"));//11
+        console.log(parseInt("222.22"));//222
+        console.log(parseInt("abc"));///NAN
+        //函数转换parseFloat****
+        console.log(parseFloat("11asd"));//11
+        console.log(parseFloat("222.22"));//222.22
+        console.log(parseFloat("abc"));//NAN
+        console.log(parseFloat("222.22.222"));//222.22
+        
+        console.log("***********************")
+        //显示转换tostring
+        var date=10.15;
+        console.log(date);
+        console.log(date.toString());
+        //toFixed
+        console.log(date.toFixed(1));//四舍五入
+        //number
+        console.log(Number("5.5"));
+        console.log(Number("55"));
+        console.log(Number("5.5.6"));
+        //string 任意值转化成字符串
+        console.log(String("11.22.33"));
+        console.log(String("Null"));
+        console.log("***********************")
+        //转化字符创flag+""***
+        var flag= true;
+        console.log(flag+"")
+
+
+
+    </script>
+</body>
+</html>

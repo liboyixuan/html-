@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件</title>
+</head>
+<body>
+    姓名:<input type="text" id="uname">
+    按钮：<button type="button" onclick="chicken()"></button>
+    chengshi:<select id="city">
+        <option value="请选择城市">请选择城市</option>
+        <option>as</option>
+        <option>asas</option>
+        <option>assac</option>
+
+    </select>
+    <div id="div1">11</div>
+    <script type="text/javascript">
+        /*
+                 事件源；事件名；事件监听；事件处理
+        单机按钮：按钮：单机：窗口：执行函数
+            onload：当页面或图像加载完后立即触发
+            onblur：元素失去焦点
+            onfocus：元素获得焦点
+            onclick：鼠标点击某个对象
+            onchange：用户改变域的内容
+            onmouseover：鼠标移动到某个元素上
+            onmouseout：鼠标从某个元素上离开
+            onkeyup：某个键盘的键被松开
+            onkeydown：某个键盘的键被按下
+        load加载事件  当页面加载完毕之后的时间
+        */
+        window.onload = function(){
+            console.log("sad");
+        }
+        var uname = document.getElementById("uname");
+        uname.onblur = function(){
+            console.log("元素失去焦点");
+        }
+        uname.onfocus = function(){
+            console.log("元素获得焦点");
+        }
+        function chicken(){
+            console.log("assfdf");
+        }
+        document.getElementById("city").onchange=function(){
+            console.log("xianginm");
+        }
+        var div =document.getElementById("div1")
+        div1.onmouseover =function(){
+            console.log("sadf");
+        }
+        div1.onmouseout =function(){
+            console.log("sadf");
+        }
+        uname.onkeydown = function(){
+            console.log("ad");
+        }
+        uname.onkeyup =function (){
+            console.log("as");
+        }
+
+    </script>
+</body>
+
+</html>

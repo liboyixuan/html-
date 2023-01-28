@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件处理程序</title>
+</head>
+<body>
+    <input type="text" name="uname"/>
+    <!-- html事件处理程序-->
+    <button type="button" onclick="alert('Hello')" onmouseout="test()">按钮</button>
+    <!--DOM0-->
+    <button type="button" id="btn">DOM</button>
+    <script type="text/javascript">
+       
+        function test(){
+            console.log("xian");
+        }
+        var btn=document.getElementById("btn");
+        console.log(btn);
+        btn.onclick = function(){
+            console.log("DOM")
+        }
+    </script>
+</body>
+</html>

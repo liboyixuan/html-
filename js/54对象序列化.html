@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象的序列化</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var obj={
+            uname:"zhangsan",//字符串
+            uage:18,//数值
+            islike:true,//布尔值
+            sayHello:function(){//函数
+                console.log("Hello..");
+            },
+            cats:['damao','miaomiao'],//数组
+            dog:{//对象
+                name:"张二狗",
+                age:1
+            }
+        };
+        console.log(obj);
+        //序列化
+        var str=JSON.stringify(obj);
+        console.log(str.uname);
+        //反序列化
+        var str2=JSON.stringify(str);
+        console.log(str2);
+        console.log("---------");
+        function  test(){
+            this.x=1;
+            console.log(this.x);
+        }
+        test();
+        console.log(x);//全局变量
+        console.log(this);
+
+        //在对象中使用
+        var o ={
+            name :"张三",
+            age:20,
+            sayHello:function(){
+                console.log(this.name);
+                console.log(this);
+            }
+        }
+        o.sayHello();
+    </script>
+</body>
+</html>

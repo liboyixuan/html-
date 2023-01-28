@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+</head>
+<body>
+    <!--
+        text   文本框
+        password  密码框
+        radio  单选框
+        checkbox 复选框
+        file  文件域
+        hidden 隐藏域
+        button 普通按钮
+        submit 提交按钮
+        reset  重置按钮
+        date  日期
+        type   元素的类型
+       
+        value  元素的值
+        readonly 只读状态
+        
+        maxlength 最长输入长度
+
+
+    -->
+    <form action="https://www.bing.com/search?q=a" method="get" target="_blank">
+    文本框:<input type="text" value="zhangsan" maxlength="5"/><br />
+    文本框:<input type="text" value="zhangsan" readonly="readonly"/><br />
+    密码框:<input type="password" /><br />
+    单选框:<input type="radio"  value="man" name="sex"/> 男<input type="radio"  value="woman" name="sex"/> 女 <br />
+    复选框:<input type="checkbox"  value="1" name="test"/>1
+          <input type="checkbox"  value="2" name="qft"/>2
+          <input type="checkbox"  value="3" name="twfqt"/>3<br />
+    文件域:<input type="file" />
+    隐藏域:<input type="hidden" value="admin" /><br />
+    普通按钮:<input type="button" value="普通按钮" disabled="disabled"/><br />
+    提交按钮:<input type="submit" value="提交按钮"  /><br />
+    重置按钮:<input type="reset" value="重复按钮" /><br />
+    日期框:<input type="date"  /><br />
+    </form>
+</body>
+</html>

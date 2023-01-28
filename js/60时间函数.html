@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时间函数</title>
+</head>
+<body>
+    <button type="button" onclick="to()">3s</button>
+    <button type="button" onclick="qw()">wq</button>
+    <script type="text/javascript">
+        /*setTimeout(function(){
+            console.log("3s");
+        },3000);//参数1：函数 参数2：时间单位毫秒
+   */
+        function to(){
+            setTimeout(test,3000);
+        }
+        function test(){
+            window.open("http:www.baidu.com");
+        }
+        //setInterval
+        function qw(){
+            setInterval(t,1000);
+        }
+        function t(){
+            console.log("nihao")
+        }
+   </script>
+</body>
+</html>

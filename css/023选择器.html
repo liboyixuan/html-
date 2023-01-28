@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+    <style type="text/css">
+        /*
+        通用选择器--选择所有元素
+        */
+        /*属性名*/
+        *{
+            /*字体颜色*/
+            color: aqua;
+
+        }
+        /*
+        元素选择器--选择指定元素
+        标签名{
+
+        }
+        */
+        p{
+            width: 200px;
+            height: auto;
+            background-color: blanchedalmond;
+        }
+        /*
+        id选择器--id选择的/最好保持唯一
+        #id属性值{
+
+        }
+
+        */
+        #div1{
+            color: black;
+
+        }
+        /*
+        class选择器--选择class属性
+        */
+        .cls1{
+            font-weight: 900;
+        }
+        </style>
+</head>
+<body>
+    <div id="div1">div1</div>
+    <div class="cls1">div2</div>
+    <div id="div1" class="cls1">div3</div>
+    <p>pp</p>
+<!--id>class>元素>通用-->
+
+</body>
+</html>

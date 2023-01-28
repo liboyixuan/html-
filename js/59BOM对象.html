@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bom对象</title>
+</head>
+<body>
+    <button type="button" onclick="test()">消息框</button>
+    <button type="button" onclick="test1()">输入框</button>
+    <button type="button" onclick="test2()">确认框</button>
+
+    <script type="text/javascript">
+        function test(){
+            alert("Hello");
+        }//消息框
+        function test1(){
+             var uname = window.prompt("请输入用户名");
+             console.log(uname);
+        }//输入框
+       function test2(){
+        var flag = confirm("您确认要删除吗");
+        if(flag){ alert("good");}
+       
+        else{alert("没事别瞎点");}
+        
+       }
+    </script>
+</body>
+</html>

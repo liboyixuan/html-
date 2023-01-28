@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数的定义</title>
+</head>
+<body>
+    <script type="text/javascript">
+//函数声明语句
+        function test(){
+           console.log("hanshuavni") 
+        }
+        test();//调用函数
+        function test2(a){
+            console.log(a);
+        }
+        test2(1);
+//函数定义表达式
+        var test3 =function(){
+            console.log("asgshhjhhjhfds...");
+        }
+        test3();
+        var test4 =function(a,b){
+            console.log(a,b);
+        }
+        test4(1,2);
+//函数的参数；调用；return
+//实参可以省略，underfined
+        console.log("===hanshaun=====");
+        function fn(str){
+            console.log(str);
+        }
+        fn();
+//函数形参同名，在使用时以最后一个值为准
+        function fn2(a,a){
+            console.log(a);
+        }
+        fn2(1,2);
+//给默认值
+        function fn3(a){
+            a=a||"a";
+            return a;
+        }
+        var a1 = fn3()
+        console.log(a1);
+        var a2 = fn3(100)
+        console.log(a2);
+//参数为值传递，引用传递
+//值传递
+        var n=10;
+        function fn4(num){
+            num = 20;
+        }
+        fn4(n);
+        console.log(n);
+//引用传递
+        var obj = {
+            uname:"zhangsan",
+            upwd:"123456"
+        };
+        function fn5(o){
+            o.uname = "lisi";//修改对象属性值
+        }
+        fn5(obj);
+        console.log(obj);
+//函数的调用
+        function add(a,b){
+            return a+b;
+        }
+        var sum=add(10,20);
+        console.log(sum);
+
+        var ob = {
+            name:"zs",
+            age:18,
+            sex:true,
+            test:function(){
+                console.log("对象调用对象...");
+            }
+        };
+        ob.test();
+//函数的作用域
+        if(true){
+            var aa=1;
+        }
+        if (true){
+            console.log(aa);
+        }
+
+
+        var bb=10;//全局变量
+        function abc(b){
+            var b=100;//局部变量
+            var bb=200;//局部变量 
+            console.log(bb);
+        }
+        abc(bb);
+        console.log(bb);//quanju
+
+    </script>
+    
+</body>
+</html>

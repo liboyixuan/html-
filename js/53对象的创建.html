@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象</title>
+</head>
+<body>
+    <script type="text/javascript">
+//对象的创建
+        var obj={};//空对象 
+        console.log(obj);
+        obj.uname = "zhangsan";
+        obj.uage = 18;
+        console.log(obj);
+//非空对象
+        var obj2={
+            uname:"zhangsan",//字符串
+            uage:18,//数值
+            islike:true,//布尔值
+            sayHello:function(){//函数
+                console.log("Hello..");
+            },
+            cats:['damao','miaomiao'],//数组
+            dog:{//对象
+                name:"张二狗",
+                age:1
+            }
+        };
+        console.log(obj2);
+        console.log(obj2.uname);
+        obj2.sayHello();//方法调用模式
+        obj2.uage=19;
+//通过new object 创建
+        var obj3 = new Object();
+        obj3.name="lisa";
+        console.log(obj3);
+//通过object对象的create方法创建
+        var obj4 = Object.create(null);
+        console.log(obj4.name);
+        var obj5 = Object.create(obj3);
+        console.log(obj5.name)
+    </script>
+</body>
+</html>
